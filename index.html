@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+            color: #e6e6e6;
+        }
+        header {
+            background: #000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #444;
+        }
+        header h1 {
+            margin-top: 15px;
+            font-size: 2.5rem;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #fff;
+            border-left: 5px solid #555;
+            padding-left: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            border-top: 2px solid #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://source.unsplash.com/random/300x300?face" alt="Profile Photo">
+        <h1>XYZ</h1>
+        <p>A passionate learner and aspiring developer exploring web technologies, problem solving, and creative digital building.</p>
+    </header>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Smart Task Manager</h3>
+                <p>A simple web-based productivity tool that allows users to create, track, and complete tasks efficiently. Built using HTML, CSS, and JavaScript with a clean and responsive interface.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather Info App</h3>
+                <p>A weather forecasting app that fetches real-time climate data using a public API. Designed with a sleek UI and provides temperature, humidity, and condition updates for any city.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
